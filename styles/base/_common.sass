@@ -1,15 +1,25 @@
 
 /* NavBar */
 .miniNavBar
-  a
-    .small-img
-      width: 50px
+  float: left
+  background: #134eb3
+  width: 80px
+  ul
+    padding-left: 0px
+  li
+    padding: 15px
+    & :nth-child-type(1)
+      padding-bottom: 30px
+    a
+      .small-img
+        width: 35px
 .navbar
   background: #134eb3
   width: 377px
+  float: left
   border-left: 1px solid #3064bc
   box-shadow: inset -10px 0 15px -5px #333
-  display: inline-block
+  display: block
   h3
     font-size: 32px
     padding: 20px
@@ -20,14 +30,13 @@
     & > li
       a
         list-style-type: none
-        text-decoration: none;
+        text-decoration: none
         font-size: 20px
         color: #7597d2
     & > li.active
       a
         opacity: 0.8
-    & > li:hover
-      a
+    & > li:hover > a
         opacity: 0.8
     .submenu
       padding-left: 20px
